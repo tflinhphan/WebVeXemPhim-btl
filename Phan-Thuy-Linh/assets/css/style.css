@@ -70,20 +70,34 @@ a {
     margin: 20px 5px;
     font-size: 3.5rem;
     color: #FFF;
-    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
 }
-.sub-title::after {
+.heading .title::after{
+    content: "";
+    width: 2px;
+    height: 32px;
+    bottom: -10px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    margin: 0 10px;
+}
+/* .heading .sub-title{
+    position: relative;
+} */
+/* .heading .sub-title::after {
     position: absolute;
     top: 50px;
+    left: 50%;
     content: "";
     display: inline-block;
-    width: 1110px;
+    width: 40px;
     height: 3px;
     flex-shrink: 0;
     border-radius: 12px;
     background: var(--primary-color);
     cursor: context-menu;
-}
+} */
 /* =====List movie===== */
 .list-movie {
     display: flex;
